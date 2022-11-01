@@ -13,11 +13,15 @@ export const ButtonContainer = styled.button`
     ${({variant}) => variant != "primary" && css`
         min-width: 167px;
         height: 33px;
-
         background: #E4105D;
 
+        &:hover {
+            opacity: 0.6;
+            cursor: pointer;
+        }
+
         &::after {
-            content: '',
+            content: '';
             position: abslotue;
             border: 1px solid #E4105D;
             top: -5px;
