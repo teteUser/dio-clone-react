@@ -12,6 +12,7 @@ export const UserPicture = styled.img`
     border-radius: 22px;
     border: 3px solid #FFFFFF;
     margin-right: 12px;
+    background-color: #AAF;
 `
 
 export const NameText = styled.div`
@@ -25,9 +26,9 @@ export const NameText = styled.div`
 
 export const Progress = styled.div`
     width: 180px;
-    height: 6px;
+    height: 10px;
     background-color: #FFFFFF;
-    border-radius: 3px;
+    border-radius: 10px;
     position: relative;
 
     &::after {
@@ -36,8 +37,8 @@ export const Progress = styled.div`
         top: 0;
         left: 0;
         width: ${({percentual}) => percentual}%;
-        height: 6px;
-        border-radius: 3px;
+        height: 10px;
+        border-radius: 10px;
         background-color: #23DD7A;
     }
 ` 

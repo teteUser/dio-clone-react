@@ -50,8 +50,10 @@ export const UserInfo = styled.div`
 export const UserPicture = styled.img`
     width: 32px;
     height: 32px;
+    padding: 2px;
     border-radius: 22px;
     border: 3px solid #FFFFFF;
+    background-color: #AAF;
 `
 
 export const PostInfo = styled.div`

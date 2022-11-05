@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from '../../assets/logo-dio.png';
 import { Button } from '../Button';
+import { UserPicture } from '../Card/styles';
+import profilePic from '../../assets/profile.png';
 import {
     BuscarInputContainer,
     Container,
@@ -11,22 +13,32 @@ import {
     Wrapper
 } from './styles';
 
-const Header = () => {
+const Header = ({autenticado}) => {
     return (
         <Wrapper>
             <Container>
                 <Row>
                     <img src={logo} alt="Logo da DIO" />
-                    <BuscarInputContainer>
+                    {autenticado ? (
+                    <>
+                        <BuscarInputContainer>
                         <Input placeholder='Buscar...'></Input>
-                    </BuscarInputContainer>
-                    <Menu>Live Code</Menu>
-                    <Menu>Global</Menu>
+                        </BuscarInputContainer>
+                        <Menu>Live Code</Menu>
+                        <Menu>Global</Menu>
+                    </>
+                    ) : null}
                 </Row>
                 <Row>
-                    <MenuRight href="#">Home</MenuRight>
-                    <Button title="Entrar"/>
-                    <Button title="Cadastrar"/>
+                    {autenticado ? (
+                        <UserPicture src={profilePic}></UserPicture>
+                    ) : (
+                    <> 
+                        <MenuRight href="#">Home</MenuRight>
+                        <Button title="Entrar"/>
+                         <Button title="Cadastrar"/>
+                    </>
+                    )}
                 </Row>
             </Container>
         </Wrapper>
