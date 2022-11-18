@@ -38,7 +38,7 @@ const Header = ({autenticado}: IHeader) => {
                     <> 
                         <MenuRight href="#">Home</MenuRight>
                         <Button title="Entrar"/>
-                         <Button title="Cadastrar"/>
+                        <Button title="Cadastrar"/>
                     </>
                     )}
                 </Row>

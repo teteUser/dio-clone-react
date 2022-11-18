@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
     width: 100%;
     max-width: 80%;
-    height: 47px;
+    height: 62px;
 
     display: flex;
     justify-content: space-between;
@@ -26,7 +26,7 @@ export const Column = styled.div`
 export const Wrapper = styled.div`
     background-color: #151515;
     width: 100%;
-    heigth: 47px;
+    heigth: 62px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,7 +58,7 @@ export const Menu = styled.a`
 export const MenuRight = styled.a`
     font-family: 'Open Sans',
     font-style: normal;
-    font-size: 12px;
+    font-size: 18px;
     line-height: 25px;
     color: #FFF;
     margin-right: 12px;

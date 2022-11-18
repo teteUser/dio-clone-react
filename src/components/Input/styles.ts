@@ -17,6 +17,7 @@ export const IconContainer = styled.div`
 
 export const InputText = styled.input`
     background-color: transparent;
+    font-size: 18px;
     color: #FFF;
     width: 100%;
     border: 0;
